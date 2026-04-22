@@ -11,7 +11,7 @@ function applyTheme(theme) {
 }
 
 function initTheme() {
-  const saved = localStorage.getItem('pb-theme') || 'dark';
+  const saved = localStorage.getItem('pb-theme') || 'light';
   applyTheme(saved);
 }
 

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day 3 — Production Brew</title>
+  <meta name="description" content="Day 3 of Production Brew — Git, GitHub, Vercel deployment, Claude prompts, and building a multi-page site." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+  <a href="home.html" class="nav-brand">⚗️ Production Brew</a>
+  <div class="nav-right">
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links nav-menu" id="navMenu">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="day1.html">Day 1</a></li>
+      <li><a href="day2.html">Day 2</a></li>
+      <li><a href="day3.html">Day 3</a></li>
+      <li><a href="day4.html">Day 4</a></li>
+      <li><a href="day5.html">Day 5</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="credits.html">Credits</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+  </div>
+</nav>
+
+<main>
+
+<!-- ===== DAY HERO ===== -->
+<div class="day-hero">
+  <div class="day-hero-bg"></div>
+  <div class="day-number">📅 Day 3</div>
+  <h1>Git, GitHub &amp; Live Deployment</h1>
+  <p>The full pipeline — scaffold, commit, push, deploy. Today we shipped a real live website using Git, GitHub, and Vercel.</p>
+</div>
+
+<!-- ===== CONTENT ===== -->
+<div class="day-content">
+
+  <!-- Intro -->
+  <div class="content-block fade-in">
+    <div class="block-header">
+      <div class="block-icon">📖</div>
+      <h2>Overview</h2>
+    </div>
+    <p>
+      Day 3 was probably the most exciting day so far. We moved from theory and setup into actually building and shipping something live. The focus was on the full development pipeline — from creating files locally all the way to deploying a live website on the internet.
+    </p>
+    <p>
+      We explored how Git works as a version control system, connected our work to GitHub repositories, and then deployed everything live using Vercel. The sir also deepened our understanding of how to use Claude effectively by teaching us a proper prompting framework.
+    </p>
+  </div>
+
+  <!-- What I Learned -->
+  <div class="content-block fade-in">
+    <div class="block-header">
+      <div class="block-icon">🧠</div>
+      <h2>What I Learned</h2>
+    </div>
+    <ul class="bullet-list">
+      <li>The full development pipeline: <strong>Scaffold → Commit → Push → Deploy</strong>. Each step has a clear purpose and order.</li>
+      <li>How <strong>Git</strong> works as a version control system — tracking changes, creating snapshots, and allowing rollback when needed.</li>
+      <li>Core Git commands: <code>git init</code>, <code>git add</code>, <code>git commit</code>, and <code>git push</code>.</li>
+      <li>What a <strong>GitHub repository</strong> is — a remote location where your code lives and can be shared or deployed from.</li>
+      <li>How <strong>Vercel</strong> connects to a GitHub repo and automatically deploys updates every time you push new code.</li>
+      <li>The importance of <strong>structured prompts</strong> when working with Claude — using the WHO, WHAT, HOW, and CONTENT framework to get better results.</li>
+      <li>How to build multiple HTML pages with consistent navigation and linking them together correctly.</li>
+      <li>Best practices for file structure, naming conventions, and keeping a project clean and organised.</li>
+    </ul>
+    <div class="highlight-box">
+      "We explored how Claude helps not just write code, but design, structure, and reason about the entire project — prompts are a skill in themselves."
+    </div>
+  </div>
+
+  <!-- What I Did -->
+  <div class="content-block fade-in">
+    <div class="block-header">
+      <div class="block-icon">🛠️</div>
+      <h2>What I Did</h2>
+    </div>
+    <ul class="bullet-list">
+      <li>Initialised a new Git repository locally using <code>git init</code>.</li>
+      <li>Created an initial project structure — HTML files, a CSS stylesheet, and a JavaScript file.</li>
+      <li>Staged files using <code>git add .</code> and made a first commit with a clear, descriptive message.</li>
+      <li>Pushed the project to a new <strong>GitHub repository</strong> for the first time.</li>
+      <li>Connected the GitHub repo to <strong>Vercel</strong> and triggered a live deployment — the site went live within seconds.</li>
+      <li>Built multiple pages with a shared navigation bar that linked them all together correctly.</li>
+      <li>Improved the design and usability of the site — better spacing, fonts, and layout.</li>
+      <li>Practised writing structured prompts for Claude using the WHO, WHAT, HOW, CONTENT format to generate better code and content.</li>
+    </ul>
+    <div class="tag-list">
+      <span class="tag">Git</span>
+      <span class="tag">GitHub</span>
+      <span class="tag">Vercel</span>
+      <span class="tag">Deployment</span>
+      <span class="tag">Version Control</span>
+      <span class="tag">Claude AI</span>
+      <span class="tag">Prompting</span>
+      <span class="tag">HTML/CSS</span>
+      <span class="tag">Navigation</span>
+    </div>
+  </div>
+
+  <!-- Pipeline Visual -->
+  <div class="content-block fade-in">
+    <div class="block-header">
+      <div class="block-icon">⚙️</div>
+      <h2>The Deployment Pipeline</h2>
+    </div>
+    <div style="display:flex;gap:0.75rem;align-items:center;flex-wrap:wrap;margin-top:0.5rem;">
+      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1rem 1.25rem;text-align:center;min-width:120px;">
+        <div style="font-size:1.5rem;">📁</div>
+        <div style="font-size:0.85rem;font-weight:600;margin-top:0.4rem;">Scaffold</div>
+        <div style="font-size:0.75rem;color:var(--text3);">Create files</div>
+      </div>
+      <div style="font-size:1.2rem;color:var(--accent);">→</div>
+      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1rem 1.25rem;text-align:center;min-width:120px;">
+        <div style="font-size:1.5rem;">✅</div>
+        <div style="font-size:0.85rem;font-weight:600;margin-top:0.4rem;">Commit</div>
+        <div style="font-size:0.75rem;color:var(--text3);">git commit</div>
+      </div>
+      <div style="font-size:1.2rem;color:var(--accent);">→</div>
+      <div style="background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1rem 1.25rem;text-align:center;min-width:120px;">
+        <div style="font-size:1.5rem;">⬆️</div>
+        <div style="font-size:0.85rem;font-weight:600;margin-top:0.4rem;">Push</div>
+        <div style="font-size:0.75rem;color:var(--text3);">git push</div>
+      </div>
+      <div style="font-size:1.2rem;color:var(--accent);">→</div>
+      <div style="background:linear-gradient(135deg,rgba(124,106,247,0.15),rgba(192,132,252,0.15));border:1px solid rgba(124,106,247,0.3);border-radius:var(--radius-sm);padding:1rem 1.25rem;text-align:center;min-width:120px;">
+        <div style="font-size:1.5rem;">🚀</div>
+        <div style="font-size:0.85rem;font-weight:600;margin-top:0.4rem;">Deploy</div>
+        <div style="font-size:0.75rem;color:var(--accent2);">Vercel live</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Images -->
+  <div class="content-block fade-in">
+    <div class="block-header">
+      <div class="block-icon">🖼️</div>
+      <h2>Photos from Day 3</h2>
+    </div>
+    <div class="image-grid">
+      <div class="img-card">
+        <div class="img-placeholder">🐙<span>images/day3_1.jpg</span></div>
+        <div class="img-card-label">GitHub Repository Setup</div>
+      </div>
+      <div class="img-card">
+        <div class="img-placeholder">🚀<span>images/day3_2.jpg</span></div>
+        <div class="img-card-label">Vercel Deployment Dashboard</div>
+      </div>
+    </div>
+    <p style="color:var(--text3);font-size:0.8rem;margin-top:1rem;">📌 Add your actual photos to the <code>images/</code> folder with the filenames above.</p>
+  </div>
+
+  <!-- Day Navigation -->
+  <div style="display:flex;justify-content:space-between;margin-top:1rem;flex-wrap:wrap;gap:1rem;">
+    <a href="day2.html" class="btn btn-ghost">← Day 2</a>
+    <a href="day4.html" class="btn btn-primary">Day 4 →</a>
+  </div>
+
+</div>
+</main>
+
+<footer class="footer">
+  <p>Made with ❤️ by a <span>Production Brew</span> student · 2026</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Production Brew</title>
+  <meta name="description" content="Get in touch — contact details for the Production Brew workshop student." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+  <a href="home.html" class="nav-brand">⚗️ Production Brew</a>
+  <div class="nav-right">
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links nav-menu" id="navMenu">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="day1.html">Day 1</a></li>
+      <li><a href="day2.html">Day 2</a></li>
+      <li><a href="day3.html">Day 3</a></li>
+      <li><a href="day4.html">Day 4</a></li>
+      <li><a href="day5.html">Day 5</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="credits.html">Credits</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ===== PAGE HERO ===== -->
+  <div class="day-hero">
+    <div class="day-hero-bg"></div>
+    <div class="day-number">📬 Get In Touch</div>
+    <h1>Contact</h1>
+    <p>Have questions about the workshop, want to connect, or just say hello? Here's where you can find me.</p>
+  </div>
+
+  <!-- ===== CONTACT GRID ===== -->
+  <section class="section" style="padding-top:0;">
+    <div class="contact-grid">
+
+      <!-- Contact Info -->
+      <div class="fade-in">
+        <span class="section-label">My Details</span>
+        <h2 class="section-title" style="font-size:1.8rem;margin-bottom:1.5rem;">Reach <span>Out</span></h2>
+        <div class="contact-info-card">
+
+          <div class="contact-item">
+            <div class="contact-icon purple" style="font-size:1.3rem;">👤</div>
+            <div class="contact-item-info">
+              <label>Name</label>
+              <p>Your Name Here</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon blue" style="font-size:1.3rem;">📧</div>
+            <div class="contact-item-info">
+              <label>Email</label>
+              <p>youremail@example.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon green" style="font-size:1.3rem;">📞</div>
+            <div class="contact-item-info">
+              <label>Phone</label>
+              <p>+91 9XXXX XXXXX</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon green" style="font-size:1.3rem;">💬</div>
+            <div class="contact-item-info">
+              <label>WhatsApp</label>
+              <p>+91 9XXXX XXXXX</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon pink" style="font-size:1.3rem;">📸</div>
+            <div class="contact-item-info">
+              <label>Instagram</label>
+              <p>@yourusername</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Social Links -->
+        <div style="display:flex;gap:0.75rem;margin-top:1.5rem;flex-wrap:wrap;">
+          <a href="mailto:youremail@example.com" class="btn btn-primary" id="emailBtn">📧 Send Email</a>
+          <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener" class="btn btn-ghost" id="whatsappBtn">💬 WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="fade-in fade-in-delay-2">
+        <span class="section-label">Send a Message</span>
+        <h2 class="section-title" style="font-size:1.8rem;margin-bottom:1.5rem;">Drop a <span>Note</span></h2>
+        <div class="contact-form">
+          <form id="contactForm" novalidate>
+
+            <div class="form-group">
+              <label for="formName">Your Name</label>
+              <input type="text" id="formName" name="name" placeholder="e.g. Rahul Sharma" required />
+            </div>
+
+            <div class="form-group">
+              <label for="formEmail">Email Address</label>
+              <input type="email" id="formEmail" name="email" placeholder="rahul@example.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="formPhone">Phone / WhatsApp (optional)</label>
+              <input type="tel" id="formPhone" name="phone" placeholder="+91 98XXX XXXXX" />
+            </div>
+
+            <div class="form-group">
+              <label for="formSubject">Subject</label>
+              <input type="text" id="formSubject" name="subject" placeholder="About the Production Brew workshop..." />
+            </div>
+
+            <div class="form-group">
+              <label for="formMessage">Message</label>
+              <textarea id="formMessage" name="message" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="submitBtn" style="width:100%;justify-content:center;">
+              🚀 Send Message
+            </button>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Made with ❤️ by a <span>Production Brew</span> student · 2026</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

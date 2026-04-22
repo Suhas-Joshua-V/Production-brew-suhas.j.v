@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day 2 — Production Brew</title>
+  <meta name="description" content="Day 2 of Production Brew — websites, hosting, DNS, SSH, terminal commands, WordPress, and AI tools." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+  <a href="home.html" class="nav-brand">⚗️ Production Brew</a>
+  <div class="nav-right">
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links nav-menu" id="navMenu">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="day1.html">Day 1</a></li>
+      <li><a href="day2.html">Day 2</a></li>
+      <li><a href="day3.html">Day 3</a></li>
+      <li><a href="day4.html">Day 4</a></li>
+      <li><a href="day5.html">Day 5</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="credits.html">Credits</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+  </div>
+</nav>
+
+<main>
+
+<!-- ===== DAY HERO ===== -->
+<div class="day-hero">
+  <div class="day-hero-bg"></div>
+  <div class="day-number">📅 Day 2</div>
+  <h1>Websites, Servers &amp; Terminal</h1>
+  <p>From restaurant analogies to real SSH connections — today we explored how the web actually works and got our hands on real servers.</p>
+</div>
+
+<!-- ===== CONTENT ===== -->
+<div class="day-content">
+
+  <!-- Intro -->
+  <div class="content-block fade-in">
+    <div class="block-header">
+      <div class="block-icon">📖</div>
+      <h2>Overview</h2>
+    </div>
+    <p>
+      Day 2 was a significant step up from the first day. We explored how websites work — not just the surface level, but the actual infrastructure behind them. The sir explained websites using a restaurant analogy, which genuinely made it click for me.
+    </p>
+    <p>
+      We also got to use the terminal for real, connected to an actual remote server using SSH, and worked inside the WordPress dashboard to create and publish pages. It was a busy day, but one of the most hands-on sessions of the workshop.
+    </p>
+  </div>
+
+  <!-- What I Learned -->
+  <div class="content-block fade-in">
+    <div class="block-header">
+      <div class="block-icon">🧠</div>
+      <h2>What I Learned</h2>
+    </div>
+    <ul class="bullet-list">
+      <li>How a <strong>website is like a restaurant</strong> — the domain is the address, hosting is the kitchen, and the database is the pantry storing all the ingredients (data).</li>
+      <li>The difference between a <strong>webpage</strong> and a <strong>website</strong> — a webpage is a single document; a website is a collection of linked pages.</li>
+      <li>What <strong>static vs dynamic</strong> websites are — static sites serve the same content to everyone, dynamic sites generate content based on the user or data.</li>
+      <li>How <strong>domains</strong> and <strong>hosting</strong> work together — the domain is the name, hosting is the space where files live.</li>
+      <li>Networking concepts: <strong>IP addresses</strong>, <strong>DNS</strong> (translating domain names to IPs), and <strong>ports</strong> (specific channels for different services).</li>
+      <li>How to use <strong>terminal commands</strong>: <code>pwd</code>, <code>ls</code>, <code>cd</code>, and <code>whoami</code> to navigate a server's file system.</li>
+      <li>How <strong>SSH</strong> (Secure Shell) allows you to connect to and control a remote server securely from your local machine.</li>
+      <li>The role of <strong>Claude</strong> as an AI assistant — how it can help write, plan, and improve code and content.</li>
+    </ul>
+    <div class="highlight-box">
+      "The restaurant analogy was genuinely one of the clearest explanations I've heard — it made every web concept suddenly feel logical and relatable."
+    </div>
+  </div>
+
+  <!-- What I Did -->
+  <div class="content-block fade-in">
+    <div class="block-header">
+      <div class="block-icon">🛠️</div>
+      <h2>What I Did</h2>
+    </div>
+    <ul class="bullet-list">
+      <li>Practised terminal commands in a live environment — navigated directories, listed files, and checked the current user.</li>
+      <li>Connected to a real remote server using <strong>SSH</strong> — this was a first for me and felt genuinely exciting.</li>
+      <li>Explored the file structure of the server after connecting, understanding where websites are typically hosted.</li>
+      <li>Opened and navigated the <strong>WordPress dashboard</strong> for the first time.</li>
+      <li>Created a new page inside WordPress, added content, and published it live.</li>
+      <li>Experimented with the WordPress editor and learned about posts vs pages, themes, and plugins at a surface level.</li>
+      <li>Had a brief introduction to <strong>Claude</strong> as an AI assistant and explored how it can be used during development.</li>
+    </ul>
+    <div class="tag-list">
+      <span class="tag">HTML</span>
+      <span class="tag">DNS</span>
+      <span class="tag">Domains</span>
+      <span class="tag">SSH</span>
+      <span class="tag">Terminal</span>
+      <span class="tag">WordPress</span>
+      <span class="tag">Hosting</span>
+      <span class="tag">Claude AI</span>
+      <span class="tag">Networking</span>
+    </div>
+  </div>
+
+  <!-- Images -->
+  <div class="content-block fade-in">
+    <div class="block-header">
+      <div class="block-icon">🖼️</div>
+      <h2>Photos from Day 2</h2>
+    </div>
+    <div class="image-grid">
+      <div class="img-card">
+        <div class="img-placeholder">💻<span>images/day2_1.jpg</span></div>
+        <div class="img-card-label">Terminal SSH Session</div>
+      </div>
+      <div class="img-card">
+        <div class="img-placeholder">🌐<span>images/day2_2.jpg</span></div>
+        <div class="img-card-label">WordPress Dashboard</div>
+      </div>
+    </div>
+    <p style="color:var(--text3);font-size:0.8rem;margin-top:1rem;">📌 Add your actual photos to the <code>images/</code> folder with the filenames above.</p>
+  </div>
+
+  <!-- Day Navigation -->
+  <div style="display:flex;justify-content:space-between;margin-top:1rem;flex-wrap:wrap;gap:1rem;">
+    <a href="day1.html" class="btn btn-ghost">← Day 1</a>
+    <a href="day3.html" class="btn btn-primary">Day 3 →</a>
+  </div>
+
+</div>
+</main>
+
+<footer class="footer">
+  <p>Made with ❤️ by a <span>Production Brew</span> student · 2026</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

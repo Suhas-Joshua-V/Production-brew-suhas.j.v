@@ -3,6 +3,9 @@
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
+/* Prevent bold elements from ever breaking inline flow */
+strong, b { display: inline !important; font-weight: 600; }
+
 :root {
   --bg: #0f0f13;
   --bg2: #16161e;
